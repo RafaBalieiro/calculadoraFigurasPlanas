@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <section id="container">
+      <a href="index.html" class="voltarBtn"
+        ><i class="fa-solid fa-reply"></i> Menu</a
+      >
+      <h1>Cálculo de Áreas Planas <i class="fa-solid fa-shapes"></i></h1>
+      <hr />
+      <div class="banner">
+        <img src="/assets/css/imgs/undraw_mathematics_-4-otb.svg" alt="" />
+        <p>
+          O quadrado é uma figura plana, classificado como polígono, composto
+          por 4 lados e 4 ângulos congruentes entre si, ou seja, que possuem as
+          mesmas medidas. O quadrado é uma figura geométrica bastante comum no
+          cotidiano e é um caso especial de quadrilátero estudado pela geometria
+          plana.
+        </p>
+      </div>
+
+      <form action="/" id="formulario" method="POST">
+        <h3>Cálculo da área do Quadrado</h3>
+        <label for="lado">Lado do quadrado (cm):</label>
+        <input type="text" name="lado" id="lado" />
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="resultado"></div>
+    </section>
+    <script src="/assets/js/quadrado.js"></script>
+  </body>
+</html>

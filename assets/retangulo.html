@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <section id="container">
+      <a href="index.html" class="voltarBtn"
+        ><i class="fa-solid fa-reply"></i> Menu</a
+      >
+      <h1>Cálculo de Áreas Planas <i class="fa-solid fa-shapes"></i></h1>
+      <hr />
+      <div class="banner">
+        <img src="/assets/css/imgs/undraw_mathematics_-4-otb.svg" alt="" />
+        <p>
+          O retângulo é um polígono estudado na geometria plana. Como ele tem
+          quatro lados, é classificado como um quadrilátero, e recebe o nome
+          retângulo pelo fato de possuir os quatro ângulos retos, ou seja, com
+          medida de 90º. O retângulo possui propriedades herdadas por ser um
+          quadrilátero e também propriedades específicas.
+        </p>
+      </div>
+
+      <form action="/" id="form" method="POST">
+        <h3>Cálculo da área do Retângulo</h3>
+        <label for="comprimento">Comprimento(cm):</label>
+        <input type="text" name="comprimento" id="comprimento" />
+        <label for="largura">Largura(cm):</label>
+        <input type="text" name="largura" id="largura" />
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div id="resultado"></div>
+    </section>
+    <script src="/assets/js/retangulo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <section id="container">
+      <a href="index.html" class="voltarBtn"
+        ><i class="fa-solid fa-reply"></i> Menu</a
+      >
+      <h1>Cálculo de Áreas Planas <i class="fa-solid fa-shapes"></i></h1>
+      <hr />
+      <div class="banner">
+        <img src="/assets/css/imgs/undraw_mathematics_-4-otb.svg" alt="" />
+        <p>
+          O triângulo é um polígono de três lados. O triângulo é um polígono que
+          possui três lados. Ele é o polígono mais simples, pois possui o menor
+          número de lados. Os principais elementos dessa figura geométrica são
+          os seus três lados e os três ângulos.
+        </p>
+      </div>
+
+      <form action="/" id="form" method="POST">
+        <h3>Cálculo da área do Triângulo</h3>
+        <label for="base">Base (cm):</label>
+        <input type="text" name="base" id="base" />
+        <label for="altura">Altura (cm):</label>
+        <input type="text" name="altura" id="altura" />
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div id="resultado"></div>
+    </section>
+    <script src="/assets/js/triangulo.js"></script>
+  </body>
+</html>

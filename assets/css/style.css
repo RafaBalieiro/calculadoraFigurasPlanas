@@ -1,0 +1,184 @@
+:root {
+  --primary-color: #dc0000;
+  --secondary-color: #ffdb89;
+  --terciary-color: #850000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  background-image: url(/assets/css/imgs/scattered-forcefields.svg);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+buttons {
+  color: #ffcc00;
+}
+#container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #150050;
+  border: 2px solid #ffcc00;
+  border-radius: 10px;
+}
+#container h1 {
+  text-align: center;
+  padding: 0.5rem;
+}
+.banner {
+  display: flex;
+  gap: 2rem;
+  margin: 0 2.5rem;
+  margin-top: 3rem;
+  justify-items: center;
+}
+.banner img {
+  margin: 0 auto;
+  width: 40%;
+}
+.banner p {
+  height: fit-content;
+  border: 1px solid #ffcc00;
+  padding: 1.6rem;
+  text-align: justify;
+  line-height: 2rem;
+  word-wrap: break-word;
+}
+.subtitulo {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+#container hr {
+  color: #ffcc00;
+  border: 0;
+  margin-top: 0.5rem;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(192, 196, 8, 0.856),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.listaBtn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 5rem;
+}
+button i.fa-play {
+  transform: rotate(30deg);
+}
+.listaBtn button {
+  position: relative;
+  width: 20rem;
+  height: 5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ffcc00;
+  border: 2px solid #ffcc00;
+  background-color: #fff;
+  transition: 1s;
+  overflow: hidden;
+}
+.listaBtn button:hover {
+  color: #fff;
+  border: none;
+}
+.listaBtn button span {
+  position: relative;
+  z-index: 1;
+}
+
+.listaBtn button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background: #2196f3;
+  transition: width 0.5s, height 0.5s;
+}
+
+.listaBtn button:hover::before {
+  width: 700px;
+  height: 300px;
+}
+
+/* Páginas de Cálculo */
+
+form h3 {
+  padding: 2rem 0;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid #ffcc00;
+}
+
+form button {
+  border: none;
+  background-color: #fff;
+  font-size: 24px;
+  color: #ffcc00;
+  margin: 2rem 0;
+  border: 2px solid #ffcc00;
+  font-size: 900;
+  height: 50px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+form button:hover {
+  background-color: #2196f3;
+  border: none;
+  color: #fff;
+}
+
+.voltarBtn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #ffcc00;
+}
+
+.paragrafo-resultado,
+.bad {
+  background-color: #40ad18;
+  color: #fff;
+  padding: 10px 20px;
+}
+.bad {
+  background-color: crimson;
+}

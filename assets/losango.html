@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <section id="container">
+      <a href="index.html" class="voltarBtn"
+        ><i class="fa-solid fa-reply"></i> Menu</a
+      >
+      <h1>Cálculo de Áreas Planas <i class="fa-solid fa-shapes"></i></h1>
+      <hr />
+      <div class="banner">
+        <img src="/assets/css/imgs/undraw_mathematics_-4-otb.svg" alt="" />
+        <p>
+          Losangos são figuras geométricas de quatro lados formadas por
+          segmentos de reta que se encontram apenas em seus extremos. A
+          característica que diferencia os losangos dos outros quadriláteros -
+          polígonos que possuem quatro lados - é que todos os seus lados possuem
+          a mesma medida.
+        </p>
+      </div>
+
+      <form action="/" id="form" method="POST">
+        <h3>Cálculo da área do Losango</h3>
+        <label for="diagonalMaior">Diagonal maior (cm):</label>
+        <input type="text" name="diagonalMaior" id="diagonalMaior" />
+        <label for="diagonalMenor">Diagonal menor (cm):</label>
+        <input type="text" name="diagonalMenor" id="diagonalMenor" />
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div id="resultado"></div>
+    </section>
+    <script src="/assets/js/losango.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <section id="container">
+      <a href="index.html" class="voltarBtn"
+        ><i class="fa-solid fa-reply"></i> Menu</a
+      >
+      <h1>Cálculo de Áreas Planas <i class="fa-solid fa-shapes"></i></h1>
+      <hr />
+      <div class="banner">
+        <img src="/assets/css/imgs/undraw_mathematics_-4-otb.svg" alt="" />
+        <p>
+          Trapézio é uma figura geométrica plana pertencente ao grupo dos
+          quadriláteros que possui um par de lados paralelos: Os lados paralelos
+          dos trapézios são chamados de bases. A base que possui maior medida
+          recebe o nome de base maior e a que possui menor medida recebe o nome
+          de base menor.
+        </p>
+      </div>
+
+      <form action="/" id="form" method="POST">
+        <h3>Cálculo da área do Trapézio</h3>
+        <label for="baseMaior">Base maior (cm):</label>
+        <input type="text" name="baseMaior" id="baseMaior" />
+        <label for="baseMenor">Base menor (cm):</label>
+        <input type="text" name="baseMenor" id="baseMenor" />
+        <label for="altura">Altura (cm):</label>
+        <input type="text" name="altura" id="altura" />
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div id="resultado"></div>
+    </section>
+    <script src="/assets/js/trapezio.js"></script>
+  </body>
+</html>
